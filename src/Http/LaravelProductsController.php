@@ -1,6 +1,6 @@
 <?php
 
-namespace rushix\LaravelProducts\Http;
+namespace Rushix\LaravelProducts\Http;
 
 use View;
 use Input;
@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use rushix\LaravelProducts\Models\LaravelProduct as LaravelProduct;
+use Rushix\LaravelProducts\Models\LaravelProduct as LaravelProduct;
 
 class LaravelProductsController extends \App\Http\Controllers\Controller
 {

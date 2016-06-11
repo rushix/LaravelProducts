@@ -1,6 +1,6 @@
 <?php
 
-namespace rushix\LaravelProducts\Models;
+namespace Rushix\LaravelProducts\Models;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 

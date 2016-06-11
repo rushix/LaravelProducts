@@ -1,6 +1,6 @@
 <?php
 
-namespace rushix\LaravelProducts;
+namespace Rushix\LaravelProducts;
 
 use Illuminate\Support\Facades\Facade;
 

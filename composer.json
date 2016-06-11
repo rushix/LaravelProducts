@@ -1,5 +1,5 @@
 {
-    "name": "rushix/LaravelProducts",
+    "name": "Rushix/LaravelProducts",
     "description": "products entity with RESTful handlers",
     "license": "mit",
     "authors": [
@@ -11,8 +11,8 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "rushix\\LaravelProducts\\": "src/",
-            "rushix\\LaravelProducts\\Models\\": "src/models/"
+            "Rushix\\LaravelProducts\\": "src/",
+            "Rushix\\LaravelProducts\\Models\\": "src/models/"
         }
     },
     "repositories": [
