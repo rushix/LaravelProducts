@@ -1,6 +1,6 @@
 # Install
 
-1)Make changes at composer.json
+##1)Make changes at composer.json
 
 "require": {
 	"rushix/LaravelProducts": "v1.0.*",
@@ -27,7 +27,7 @@
         }
 }
 
-2)Make changes at config/app.php
+##2)Make changes at config/app.php
 
 'providers' => [
 
@@ -49,10 +49,10 @@
 
 ]
 
-3)Execute the following commands
+##3)Execute the following commands
 
 composer update
 php artisan vendor:publish
 php artisan migrate
 
-4)View results at <server>/products/
+##4)View results at <server>/products/
