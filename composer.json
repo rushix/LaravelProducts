@@ -1,5 +1,5 @@
 {
-    "name": "rushix/lavarel-products",
+    "name": "Rushi/Products",
     "description": "products entity with RESTful handlers",
     "license": "mit",
     "authors": [
@@ -8,7 +8,7 @@
             "email": "alter.rushi@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Rushi\\Products\\": "src/",
