@@ -57,7 +57,7 @@ class LaravelProductsController extends \App\Http\Controllers\Controller
     {
         $rules = array(
             'name'  => 'required|min:10',
-            'art'   => 'required|unique:rushi_products_products|regex:/(^[A-Za-z0-9]+$)+/'
+            'art'   => 'required|unique:rushix_laravelproducts_products|regex:/(^[A-Za-z0-9]+$)+/'
         );
         $validator = Validator::make($request->all(), $rules);
 
@@ -133,7 +133,7 @@ class LaravelProductsController extends \App\Http\Controllers\Controller
 
         $rules = array(
             'name'  => 'required|min:10',
-            'art'   => 'required|unique:rushi_products_products,art,' . $oldProduct->id . '|regex:/(^[A-Za-z0-9]+$)+/|checkrole:' . $role . ',' . $oldProduct->art  
+            'art'   => 'required|unique:rushix_laravelproducts_products,art,' . $oldProduct->id . '|regex:/(^[A-Za-z0-9]+$)+/|checkrole:' . $role . ',' . $oldProduct->art  
         );
 
         $messages = array(
