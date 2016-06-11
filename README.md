@@ -61,7 +61,9 @@
 ##3)Execute the following commands
 
 composer update
+
 php artisan vendor:publish
+
 php artisan migrate
 
 ##4)View results at <server>/products/
