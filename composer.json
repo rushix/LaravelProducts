@@ -1,0 +1,19 @@
+{
+    "name": "rushi/products",
+    "description": "products entity with RESTful handlers",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Denis Eremin",
+            "email": "alter.rushi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Rushi\\Products\\": "src/",
+            "Rushi\\Products\\Models": "src/models/"
+        }
+    },
+    "require": {}
+}
