@@ -1,5 +1,5 @@
 {
-    "name": "rushi/products",
+    "name": "Rushi/Products",
     "description": "products entity with RESTful handlers",
     "license": "mit",
     "authors": [
@@ -15,5 +15,11 @@
             "Rushi\\Products\\Models": "src/models/"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rushix/laravel-products.git"
+        }
+    ],
     "require": {}
 }
