@@ -3,12 +3,18 @@
 ##1)Make changes at composer.json
 
 "require": {
+
+	....
+
 	"rushix/LaravelProducts": "v1.0.*",
         "laravelcollective/html": "^5.2"
 }
 
 
 "repositories": [
+
+	....
+
 	{
             "type": "vcs",
             "url": "https://github.com/rushix/LaravelProducts"
@@ -17,6 +23,9 @@
 
 
 "autoload": {
+
+	....
+
         "classmap": [
             "database"
         ],
