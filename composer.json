@@ -12,7 +12,7 @@
     "autoload": {
         "psr-4": {
             "rushix\\LaravelProducts\\": "src/",
-            "rushix\\LaravelProducts\\Models": "src/models/"
+            "rushix\\LaravelProducts\\Models\\": "src/models/"
         }
     },
     "repositories": [
