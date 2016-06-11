@@ -1,6 +1,6 @@
 <?php
 
-namespace Rushi\Products\Http;
+namespace rushix\LaravelProducts\Http;
 
 use View;
 use Input;
@@ -14,9 +14,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use Rushi\Products\Models\Product as Product;
+use rushix\LaravelProducts\Models\LaravelProduct as LaravelProduct;
 
-class ProductsController extends \App\Http\Controllers\Controller
+class LaravelProductsController extends \App\Http\Controllers\Controller
 {
     const ROLE = 'manager';
     const UNIQUE_IDENTIFIER = 'rushi-products';
@@ -29,7 +29,7 @@ class ProductsController extends \App\Http\Controllers\Controller
     public function index()
     {
         // get all the products
-        $products = Product::all();
+        $products = LaravelProduct::all();
 
         // load the view and pass the products
         return View::make(self::UNIQUE_IDENTIFIER . '::index')
@@ -68,7 +68,7 @@ class ProductsController extends \App\Http\Controllers\Controller
                 ->withInput($request->except(['password']));
         } else {
             // store
-            $product = new Product;
+            $product = new LaravelProduct;
             $product->name      = $request->input('name');
             $product->art       = $request->input('art');
             $product->save();
@@ -88,7 +88,7 @@ class ProductsController extends \App\Http\Controllers\Controller
     public function show($id)
     {
         // get the product
-        $product = Product::find($id);
+        $product = LaravelProduct::find($id);
 
         // show the view and pass the product to it
         return View::make(self::UNIQUE_IDENTIFIER . '::show')
@@ -108,7 +108,7 @@ class ProductsController extends \App\Http\Controllers\Controller
         //$role = app('current_user_type') ? app('current_user_type') : 'manager';
 
         // get the product
-        $product = Product::find($id);
+        $product = LaravelProduct::find($id);
 
         // show the edit form and pass the product
         return View::make(self::UNIQUE_IDENTIFIER . '::edit')
@@ -129,7 +129,7 @@ class ProductsController extends \App\Http\Controllers\Controller
         // Uncomment the next line if the current_user_type is bound
         //$role = app('current_user_type') ? app('current_user_type') : 'manager';
 
-        $oldProduct = Product::find($id);
+        $oldProduct = LaravelProduct::find($id);
 
         $rules = array(
             'name'  => 'required|min:10',
@@ -149,7 +149,7 @@ class ProductsController extends \App\Http\Controllers\Controller
                 ->withInput($request->except(['password']));
         } else {
             // store
-            $product = Product::find($id);
+            $product = LaravelProduct::find($id);
             $product->name  = $request->input('name');
             $product->art   = $request->input('art');
             $product->save();
@@ -169,7 +169,7 @@ class ProductsController extends \App\Http\Controllers\Controller
     public function destroy($id)
     {
         // delete
-        $product = Product::find($id);
+        $product = LaravelProduct::find($id);
         $product->delete();
 
         // redirect

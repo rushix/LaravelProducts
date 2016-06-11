@@ -1,10 +1,10 @@
 <?php
 
-namespace Rushi\Products\Models;
+namespace rushix\LaravelProducts\Models;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class Product extends Eloquent
+class LaravelProduct extends Eloquent
 {
     protected $table = 'rushi_products_products';
 }

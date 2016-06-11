@@ -1,5 +1,5 @@
 {
-    "name": "Rushi/Products",
+    "name": "rushix/LaravelProducts",
     "description": "products entity with RESTful handlers",
     "license": "mit",
     "authors": [
@@ -11,14 +11,14 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Rushi\\Products\\": "src/",
-            "Rushi\\Products\\Models": "src/models/"
+            "rushix\\LaravelProducts\\": "src/",
+            "rushix\\LaravelProducts\\Models": "src/models/"
         }
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/rushix/laravel-products.git"
+            "url": "https://github.com/rushix/LaravelProducts.git"
         }
     ],
     "require": {}

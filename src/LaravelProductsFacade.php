@@ -1,10 +1,10 @@
 <?php
 
-namespace Rushi\Products;
+namespace rushix\LaravelProducts;
 
 use Illuminate\Support\Facades\Facade;
 
-class ProductsFacade extends Facade
+class LaravelProductsFacade extends Facade
 {
     protected static function getFacadeAccessor() { 
         return 'rushi-products';

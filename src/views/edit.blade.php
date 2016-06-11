@@ -31,7 +31,7 @@
 
     <div class="form-group">
         {{ Form::label('art', 'Article') }}
-        {{ Form::text('art', null, array('class' => 'form-control', ($role === 'admin' ? 'enabled' : 'disabled') => 'true')) }}
+        {{ Form::text('art', null, array('class' => 'form-control', ($role === 'admin' ? 'enabled' : 'readonly') => 'true')) }}
     </div>
 
     {{ Form::submit('Edit the Product!', array('class' => 'btn btn-primary')) }}

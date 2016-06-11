@@ -1,10 +1,10 @@
 <?php
 
-namespace Rushi\Products;
+namespace rushix\LaravelProducts;
 
 use Illuminate\Support\ServiceProvider;
 
-class ProductsServiceProvider extends ServiceProvider
+class LaravelProductsServiceProvider extends ServiceProvider
 {
     const UNIQUE_PACKAGE_IDENTIFIER = 'rushi-products';
     
@@ -15,7 +15,7 @@ class ProductsServiceProvider extends ServiceProvider
         );
 
         $this->app->bind(self::UNIQUE_PACKAGE_IDENTIFIER, function() {
-            return new Products;
+            return new LaravelProducts;
         });
     }
 
